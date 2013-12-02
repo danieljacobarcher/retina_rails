@@ -9,7 +9,7 @@ module RetinaRails
         ::CarrierWave::Uploader::Base.send(:include, RetinaRails::Strategies::CarrierWave::Base)
       end
       if defined?(::Paperclip)
-        ::Mongoid::Document.send(:include, RetinaRails::Strategies::Paperclip::Base)
+        Mongoid::Document.send(:include, RetinaRails::Strategies::Paperclip::Base)
       end
     end
 
